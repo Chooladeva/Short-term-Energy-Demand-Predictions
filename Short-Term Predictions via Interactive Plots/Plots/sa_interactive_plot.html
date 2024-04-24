@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    #vis.vega-embed {
+      width: 100%;
+      display: flex;
+    }
+
+    #vis.vega-embed details,
+    #vis.vega-embed details summary {
+      position: relative;
+    }
+  </style>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega-lite@5.17.0"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+</head>
+<body>
+  <div id="vis"></div>
+  <script>
+    (function(vegaEmbed) {
+      var spec = {"config": {"view": {"continuousWidth": 300, "continuousHeight": 300}}, "layer": [{"mark": {"type": "area", "color": "lightblue", "line": {"color": "darkblue"}, "opacity": 0.5}, "encoding": {"tooltip": [{"field": "Hour", "type": "quantitative"}, {"field": "Predicted Demand", "format": ".3f", "title": "Predicted Demand (MW)", "type": "quantitative"}, {"field": "Cumulative Demand", "format": ".3f", "title": "Predicted Total Demand (MW)", "type": "quantitative"}, {"field": "Average Hourly Demand", "format": ".3f", "title": "Predicted Average Demand per Hour (MW)", "type": "quantitative"}], "x": {"axis": {"grid": true, "gridColor": "gray", "gridWidth": 0.5, "title": "Hour"}, "field": "Hour", "scale": {"domain": [0, 24]}, "type": "quantitative"}, "y": {"axis": {"grid": true, "gridColor": "gray", "gridWidth": 0.5, "title": "Predicted Demand (MW)"}, "field": "Predicted Demand", "scale": {"domain": [0, 11000]}, "type": "quantitative"}}, "name": "view_4", "title": "Predicted Demand Over 24 Hours for South Australia"}, {"mark": {"type": "circle", "color": "black"}, "encoding": {"tooltip": [{"field": "Hour", "type": "quantitative"}, {"field": "Predicted Demand", "format": ".3f", "title": "Predicted Demand (MW)", "type": "quantitative"}, {"field": "Cumulative Demand", "format": ".3f", "title": "Total Predicted Demand (MW)", "type": "quantitative"}, {"field": "Average Hourly Demand", "format": ".3f", "title": "Average Hourly Demand (MW)", "type": "quantitative"}], "x": {"field": "Hour", "type": "quantitative"}, "y": {"field": "Predicted Demand", "type": "quantitative"}}, "title": "Predicted Demand Over 24 Hours for South Australia"}], "data": {"name": "data-ef1c3e5e47fca51c3b8a245c4b5a9518"}, "height": 400, "params": [{"name": "param_4", "select": {"type": "interval", "encodings": ["x", "y"]}, "bind": "scales", "views": ["view_4"]}], "width": 800, "$schema": "https://vega.github.io/schema/vega-lite/v5.17.0.json", "datasets": {"data-ef1c3e5e47fca51c3b8a245c4b5a9518": [{"Hour": 1, "Predicted Demand": 1232.5533280690097, "Cumulative Demand": 1232.5533280690097, "Average Hourly Demand": 1232.5533280690097}, {"Hour": 2, "Predicted Demand": 1396.124765951699, "Cumulative Demand": 2628.6780940207086, "Average Hourly Demand": 1314.3390470103543}, {"Hour": 3, "Predicted Demand": 1452.7489716293778, "Cumulative Demand": 4081.4270656500867, "Average Hourly Demand": 1360.475688550029}, {"Hour": 4, "Predicted Demand": 1475.016414632226, "Cumulative Demand": 5556.4434802823125, "Average Hourly Demand": 1389.1108700705781}, {"Hour": 5, "Predicted Demand": 1473.741462076279, "Cumulative Demand": 7030.184942358592, "Average Hourly Demand": 1406.0369884717184}, {"Hour": 6, "Predicted Demand": 1458.6204853287109, "Cumulative Demand": 8488.805427687303, "Average Hourly Demand": 1414.8009046145505}, {"Hour": 7, "Predicted Demand": 1458.6204853287109, "Cumulative Demand": 9947.425913016014, "Average Hourly Demand": 1421.0608447165735}, {"Hour": 8, "Predicted Demand": 1458.6204853287109, "Cumulative Demand": 11406.046398344724, "Average Hourly Demand": 1425.7557997930905}, {"Hour": 9, "Predicted Demand": 1465.2784948804178, "Cumulative Demand": 12871.324893225143, "Average Hourly Demand": 1430.1472103583492}, {"Hour": 10, "Predicted Demand": 1488.7553106982828, "Cumulative Demand": 14360.080203923426, "Average Hourly Demand": 1436.0080203923426}, {"Hour": 11, "Predicted Demand": 1520.626969479407, "Cumulative Demand": 15880.707173402832, "Average Hourly Demand": 1443.7006521275302}, {"Hour": 12, "Predicted Demand": 1528.6781978110298, "Cumulative Demand": 17409.385371213863, "Average Hourly Demand": 1450.782114267822}, {"Hour": 13, "Predicted Demand": 1557.7124742206283, "Cumulative Demand": 18967.09784543449, "Average Hourly Demand": 1459.007526571884}, {"Hour": 14, "Predicted Demand": 1582.944851421067, "Cumulative Demand": 20550.04269685556, "Average Hourly Demand": 1467.8601926325398}, {"Hour": 15, "Predicted Demand": 1570.4120840378005, "Cumulative Demand": 22120.45478089336, "Average Hourly Demand": 1474.6969853928906}, {"Hour": 16, "Predicted Demand": 1570.6095038805915, "Cumulative Demand": 23691.06428477395, "Average Hourly Demand": 1480.691517798372}, {"Hour": 17, "Predicted Demand": 1499.5622125001987, "Cumulative Demand": 25190.62649727415, "Average Hourly Demand": 1481.8015586631852}, {"Hour": 18, "Predicted Demand": 1413.1419047194008, "Cumulative Demand": 26603.768401993548, "Average Hourly Demand": 1477.9871334440859}, {"Hour": 19, "Predicted Demand": 1413.1419047194008, "Cumulative Demand": 28016.910306712947, "Average Hourly Demand": 1474.5742266691025}, {"Hour": 20, "Predicted Demand": 1413.1419047194008, "Cumulative Demand": 29430.052211432347, "Average Hourly Demand": 1471.5026105716174}, {"Hour": 21, "Predicted Demand": 1413.1419047194008, "Cumulative Demand": 30843.194116151746, "Average Hourly Demand": 1468.7235293405593}, {"Hour": 22, "Predicted Demand": 1413.1419047194008, "Cumulative Demand": 32256.336020871146, "Average Hourly Demand": 1466.1970918577792}, {"Hour": 23, "Predicted Demand": 1413.1419047194008, "Cumulative Demand": 33669.477925590545, "Average Hourly Demand": 1463.8903445908932}, {"Hour": 24, "Predicted Demand": 1413.1419047194008, "Cumulative Demand": 35082.619830309945, "Average Hourly Demand": 1461.7758262629143}]}};
+      var embedOpt = {"render": "svg", "actions": false, "mode": "vega-lite"};
+
+      function showError(el, error){
+          el.innerHTML = ('<div style="color:red;">'
+                          + '<p>JavaScript Error: ' + error.message + '</p>'
+                          + "<p>This usually means there's a typo in your chart specification. "
+                          + "See the javascript console for the full traceback.</p>"
+                          + '</div>');
+          throw error;
+      }
+      const el = document.getElementById('vis');
+      vegaEmbed("#vis", spec, embedOpt)
+        .catch(error => showError(el, error));
+    })(vegaEmbed);
+
+  </script>
+</body>
+</html>
