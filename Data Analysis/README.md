@@ -1,4 +1,0 @@
-The data analysis phase comprised a thorough assessment, visualization, and interpretation of weather, temporal, and seasonal parameters in conjunction with energy demand across regions. In order to make this process easier, AWS SageMaker notebooks were utilized, which provide a scalable and efficient platform for executing cloud-based analytics. The analysis involved the use of several Python libraries, such as Pandas for data manipulation, NumPy for numerical operations, Matplotlib and Seaborn for data visualization, and Joypy to generate joy graphs. Also, the SciPy library was used for statistical analysis, while the Sklearn library was used for feature selection via mutual information regression.
-
-Access the master_table and resampled_data datasets in pickel format by following this link:
-https://1drv.ms/f/s!ArByJJByZ7Emk3a4Xtzha7GHVGxo?e=dCmhke
